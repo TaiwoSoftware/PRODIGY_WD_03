@@ -1,76 +1,84 @@
-*{
-    margin: 0;
+* {
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Itim', cursive;
 }
 
-html {
-    max-width: 1440px;
-    width: 100%;
+.background {
+    background-color: #12181B;
+    height: 100vh;
+    padding-top: 1px;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+.display {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
     margin: 0 auto;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+
 }
 
-body {
-    padding: 1rem;
-    background: rgb(1, 1, 30);
-}
-
-.board {
-    /* border: 1px solid red; */
-    padding: 2rem;
-    box-sizing: border-box;
-    /* height: 100vh; */
-}
-
-.verticalRule {
-    background:red;
-    padding: .5rem;
-    border-radius: 1rem;
-    height: 20rem;
-    width: 1px;
-    box-sizing: border-box;
-}
-
-.verticalRuleTwo {
-    background:red;
-    padding: .5rem;
-    border-radius: 1rem;
-    height: 20rem;
-    width: 1px;
-    box-sizing: border-box;
-}
-
-.verticals {
+.tile {
+    border: 1px solid white;
+    min-width: 100px;
+    min-height: 100px;
     display: flex;
-    gap: 10rem;
-    width: 16.5%;
-    margin: 0 auto;
-    margin-top: 6rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
 }
 
-.horizontalRule {
-    background:red;
-    padding: .5rem;
-    border-radius: 1rem;
-    height: 1px;
-    width: 400px;
-    margin-top: -15rem;
-    margin-bottom: 7rem;
-    box-sizing: border-box;
+.playerX {
+    color: #09C372;
 }
 
-.horizontalRuleTwo {
-    background:red;
-    padding: .5rem;
-    border-radius: 1rem;
-    height: 1px;
-    width: 400px;
-    box-sizing: border-box;
+.playerO {
+    color: #498AFB;
 }
 
-.horizontals {
-    width: 38%;
-    margin-top: -9rem;
-    margin-left: 24rem;
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.controls button {
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.restart {
+    background-color: #498AFB;
+}
+
+#reset {
+    background-color: #FF3860;
 }

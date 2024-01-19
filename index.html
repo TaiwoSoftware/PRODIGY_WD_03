@@ -1,39 +1,40 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tic tac toe</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./app.js"></script>
+    <title>Tic-Tac-Toe</title>
   </head>
   <body>
-    <!-- To build a tic-tac-toe web application, you can use HTML,CSS and JavaScript, by implementing functions to handle user clicks, track game state, and check for wining conditions, you can create an interactive and engaging tic-tac-toe game. With these technologies and functionalities, user can play against each other or an AI opponent, aiming to get three markers in a row to win the game -->
-
-    <div class="board">
-      <!-- <div class="firstRow">
-            <div class="column numberOne" id="column0"></div>
-            <div class="column numberTwo" id="column1"></div>
-            <div class="column numberThree" id="column2"></div>
-        </div>
-        <div class="secondRow">
-            <div class="column" id="column3"></div>
-        <div class="column" id="column4"></div>
-        <div class="column" id="column5"></div>
-        </div>
-        <div class="lastRow">
-            <div class="column" id="column6"></div>
-        <div class="column" id="column7"></div>
-        <div class="column" id="column8"></div>
-        </div> -->
-      <div class="verticals">
-        <div class="verticalRule"></div>
-        <div class="verticalRuleTwo"></div>
-      </div>
-      <div class="horizontals">
-        <div class="horizontalRule"></div>
-        <div class="horizontalRuleTwo"></div>
-      </div>
-    </div>
-    <script src="app.js"></script>
+    <main class="background">
+      <section class="title">
+        <h1>Tic Tac Toe</h1>
+      </section>
+      <section class="display">
+        Player <span class="display-player playerX">X</span>'s turn
+      </section>
+      <section class="container">
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+      </section>
+      <section class="display announcer hide"></section>
+      <section class="controls">
+        <button id="reset">Reset</button>
+      </section>
+    </main>
   </body>
 </html>
